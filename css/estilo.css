@@ -5,4 +5,5 @@ body {
 .controles{
     display: flex;
     flex-direction: row;
+    
 }
