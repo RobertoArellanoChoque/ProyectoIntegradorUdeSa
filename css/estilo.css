@@ -5,37 +5,35 @@ body {
 .cabezera{
     display: flex;
     flex-wrap: wrap;
+    background-color: rgba(255, 0, 0, 0.788);
     align-items: center;
-    background-color: rgba(255, 0, 0, 0.699);
-    margin: 10px 10px 30px 10px;
-    
-    
 }
 .controles{
-display: flex;
-flex-wrap: wrap;
-margin: 20px;
-align-items: center;
-
-}
-.titulo{
-    color: white;
-    margin: 15px 250px 20px 20px; 
-    font-size: 50px;
-    text-decoration: none;
-    
-    
+    display: flex;
+    align-items: center;
 }
 .controleshijo{
+    margin: 10px;
     color: white;
-    margin: 20px;
     text-decoration: none;
     font-size: 25px;
 }
+.titulo{
+    margin: 10px 280px 10px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 45px;
+}
 .buscador{
-    display: flex;
+   display: flex;
+    margin: 0px 180px 0px 0px;
 }
 input{
     height: 25px;
-    font-size: 20px;
 }
+.boton{
+    height: 31px;
+}
+
+
+
