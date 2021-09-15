@@ -1,7 +1,10 @@
 body {
 
     background-color: #303030;
+
 }
+/* Este es el css para el header de las paginas*/
+
 .cabezera{
     display: flex;
     flex-wrap: wrap;
