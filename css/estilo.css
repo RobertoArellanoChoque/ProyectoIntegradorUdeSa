@@ -37,6 +37,12 @@ input{
 .boton{
     height: 31px;
 }
+/*Este es el codigo para el index*/
+.tituloinicial{
+color: white;
+font-style: none;
+font-size: 35px;
+}
 
 
 
