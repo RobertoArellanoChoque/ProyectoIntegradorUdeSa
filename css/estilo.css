@@ -43,6 +43,21 @@ color: white;
 font-style: none;
 font-size: 35px;
 }
+.imagen{
+    width: auto;
+    height: auto;
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+}
+.primerasection{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(255, 0, 0, 0.788); 
+    align-items: center;
+    margin: 10px;
+    
+}
 
 
 
