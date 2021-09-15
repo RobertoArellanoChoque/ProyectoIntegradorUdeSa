@@ -2,8 +2,40 @@ body {
 
     background-color: #303030;
 }
-.controles{
+.cabezera{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.699);
+    margin: 10px 10px 30px 10px;
     
+    
+}
+.controles{
+display: flex;
+flex-wrap: wrap;
+margin: 20px;
+align-items: center;
+
+}
+.titulo{
+    color: white;
+    margin: 15px 250px 20px 20px; 
+    font-size: 50px;
+    text-decoration: none;
+    
+    
+}
+.controleshijo{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 25px;
+}
+.buscador{
+    display: flex;
+}
+input{
+    height: 25px;
+    font-size: 20px;
 }
