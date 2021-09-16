@@ -61,3 +61,38 @@ font-size: 35px;
 
 
 
+
+
+/*Usando css para detailmovie*/
+
+.titulos_detalles{ 
+    color: black;
+    font-style: none;
+    font-size: 3em;
+    line-height: 1;
+    text-shadow:4px 8px 35px rgb(155, 145, 145); 
+    
+}
+
+
+.DETALLES_DE_PELICULAS{
+    color: white;
+font-style: none;
+font-size: 35px;
+text-decoration: underline;
+text-align: center;
+}
+
+.letras_detalles{
+    
+    color: black;
+    font-style: none;
+    font-size: 1,5em;
+    line-height: 1;
+    
+    
+
+}
+.sectinpadre{
+    display: flex;
+}
