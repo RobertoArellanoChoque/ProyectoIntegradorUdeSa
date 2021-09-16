@@ -65,8 +65,9 @@ font-size: 35px;
 
 /*Usando css para detailmovie*/
 
-.titulos_detalles{ 
-    color: black;
+
+.titulosdetalles{ 
+    color: white;
     font-style: none;
     font-size: 3em;
     line-height: 1;
@@ -83,16 +84,69 @@ text-decoration: underline;
 text-align: center;
 }
 
-.letras_detalles{
+.duracion{
     
-    color: black;
+    color: white;
     font-style: none;
     font-size: 1,5em;
     line-height: 1;
-    
-    
+    margin: 10px;   
 
 }
-.sectinpadre{
+.sectionpadre{
     display: flex;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.788);
+    margin: 10px;
 }
+.sinopsis{
+    margin: 70px 40px 40px 10px;
+    color: white;
+    font-size: 40px;
+    align-items: center;
+    
+}
+.peliculaprincipal{
+    margin: 10px 10px 40px 10px;
+}
+.botonfavorito{
+    background-color: yellow;
+    width: 250px;
+    margin: 10px;
+}
+.letrasfavorito{
+   padding: 20px;
+   text-align: center;
+
+}
+.cajadatos{
+    background-color: rgba(153, 45, 45, 0.753);
+    margin: 10px;
+
+}
+
+.informacion{
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+.calificacion{
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+}
+.puntuacion{
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+}
+.estreno{
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+}
+
+
+    
+
+
