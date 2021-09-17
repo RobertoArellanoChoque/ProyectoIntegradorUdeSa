@@ -62,9 +62,8 @@ font-size: 35px;
     color: white;
     text-align: center;
     margin: 25px;
+    text-decoration: none;
 }
-
-
 
 
 
@@ -80,8 +79,7 @@ font-size: 35px;
     
 }
 
-
-.DETALLES_DE_PELICULAS{
+.detalles{
     color: white;
 font-style: none;
 font-size: 35px;
@@ -151,7 +149,8 @@ text-align: center;
     margin: 10px;
 }
 
-.serieprincipal{
-    margin: 10px 10px 40px 10px;
-}
+
+
+    
+
 
