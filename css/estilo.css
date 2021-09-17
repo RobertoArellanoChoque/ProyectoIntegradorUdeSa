@@ -95,7 +95,7 @@ font-size: 35px;
 .titulosdetalles{ 
     color: white;
     font-style: none;
-    font-size: 3em;
+    font-size: 2.5em;
     line-height: 1;
     text-shadow:4px 8px 35px rgb(155, 145, 145); 
     
@@ -135,19 +135,22 @@ text-align: center;
     margin: 10px 10px 40px 10px;
 }
 .botonfavorito{
-    background-color: yellow;
+    background-color: black;
     width: 250px;
     margin: 10px;
     text-decoration: none;
 }
-.letrasfavorito{
+.letrasfavorito {
    padding: 20px;
    text-align: center;
    text-decoration: none;
+   
+   
 
 }
 .favorito{
     text-decoration: none;
+    color: rgb(155, 145, 145);
 }
 .cajadatos{
     background-color: rgba(153, 45, 45, 0.753);
