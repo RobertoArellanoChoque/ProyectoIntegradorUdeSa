@@ -122,7 +122,7 @@ text-align: center;
     display: flex;
     align-items: center;
     background-color: rgba(255, 0, 0, 0.788);
-    margin: 10px;
+    margin: 30px 10px 30px 10px;
 }
 .sinopsis{
     margin: 70px 40px 40px 10px;
@@ -138,15 +138,21 @@ text-align: center;
     background-color: yellow;
     width: 250px;
     margin: 10px;
+    text-decoration: none;
 }
 .letrasfavorito{
    padding: 20px;
    text-align: center;
+   text-decoration: none;
 
+}
+.favorito{
+    text-decoration: none;
 }
 .cajadatos{
     background-color: rgba(153, 45, 45, 0.753);
     margin: 10px;
+    justify-content: start;
 
 }
 
@@ -170,6 +176,22 @@ text-align: center;
     font-size: 25px;
     margin: 10px;
 }
+.linkfinal{
+    display: flex;
+    background-color: thistle;
+    justify-content: left;
+    margin: 10px;
+    
+}
+.genero{
+    color: white;
+}
+.generoprincipal{
+   background-color: yellowgreen;
+   margin: 5px;
+   
+}
+
 
 
 @media screen and (max-width:800px) {
