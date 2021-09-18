@@ -21,14 +21,15 @@ body {
     color: black;
     text-decoration: none;
     padding: 10px;
-    background-color: white;
-    border-radius: 50%;
+    background-color: white;  
+    font-family: 'Commissioner', sans-serif;
 }
 .titulo{
     margin: 10px 280px 10px 10px;
     color: white;
     text-decoration: none;
     font-size: 45px;
+    font-family: 'Luckiest Guy', cursive;
 }
 .buscador{
    display: flex;
@@ -45,6 +46,10 @@ input{
 color: white;
 font-style: none;
 font-size: 35px;
+font-family: 'Commissioner', sans-serif;
+text-shadow: 4px 8px 35px rgb(155, 145, 145);
+
+
 }
 .imagen{
     width: auto;
@@ -58,7 +63,7 @@ font-size: 35px;
     flex-wrap: wrap;
     background-color: rgba(255, 0, 0, 0.788); 
     align-items: center;
-    margin: 10px;
+    margin: 1px;
     
 }
 .titulopelicula{
@@ -66,6 +71,9 @@ font-size: 35px;
     text-align: center;
     margin: 25px;
     text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    
+    
 }
 .tituoloprincipaldepelicula{
     text-align: center;
@@ -97,6 +105,7 @@ font-size: 35px;
     font-size: 2.5em;
     line-height: 1;
     text-shadow:4px 8px 35px rgb(155, 145, 145); 
+    font-family: 'Bebas Neue', cursive;
     
 }
 
@@ -120,7 +129,6 @@ text-align: center;
 .sectionpadre{
     display: flex;
     align-items: center;
-    background-color: rgba(255, 0, 0, 0.788);
     margin: 30px 10px 30px 10px;
 }
 .sinopsis{
