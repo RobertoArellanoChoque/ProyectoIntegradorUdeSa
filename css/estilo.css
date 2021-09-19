@@ -103,7 +103,7 @@ text-shadow: 4px 8px 35px rgb(155, 145, 145);
 }
 
 
-/*Usando css para detailmovie*/
+/*Usando css para detailmovie y detailserie*/
 
 
 .titulosdetalles{ 
@@ -224,7 +224,7 @@ font-family: 'Bebas Neue', cursive;
 }
 
 
-
+/*Responsive */
 
 @media screen and (max-width:768px) {
     .footer{
