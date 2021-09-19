@@ -23,6 +23,7 @@ body {
     padding: 10px;
     background-color: white;  
     font-family: 'Commissioner', sans-serif;
+    border-color: white ;stroke: 2px;
 }
 .titulo{
     margin: 10px 280px 10px 10px;
@@ -34,6 +35,7 @@ body {
 .buscador{
    display: flex;
     margin: 0px 180px 0px 0px;
+
 }
 input{
     height: 25px;
@@ -217,11 +219,32 @@ font-family: 'Bebas Neue', cursive;
 
 
 
-@media screen and (max-width:800px) {
+@media screen and (min-width:768px) {
     .cabezera{
         flex-direction: column;
+        align-items: center;
     }
 }
+@media(max-width: 375px){
+    .cabezera{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (min-width:768px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width: 375px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 
 
 
