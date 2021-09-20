@@ -225,54 +225,6 @@ font-family: 'Bebas Neue', cursive;
 
 
 /*aqui esta el css de generos*/ 
-.generospeliculas {
-    display:block;
-    flex-wrap: wrap;
-}
-
-.generostype {
-    color: white;
-    
-
-}  
-
-.generosseries {
-    display:block;
-    flex-wrap: wrap;
-}
-
-
- .generospeliculas ul li a {
-     color: rgb(245, 243, 241);
-     text-decoration: none;
-     background-color: red;
-     width: 75px;
-     display:block;
-     margin: 10px;
-     padding: 5px;
-     border-radius: 10px;
-     text-align:center;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    }  
-
-    .generosseries ul li a{
-        color: rgb(245, 243, 241);
-        text-decoration: none;
-        background-color: red;
-        width: 75px;
-        display:block;
-        margin: 10px;
-        padding: 5px;
-        border-radius: 10px;
-        text-align:center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-
-
-
-
 
 
 /*Responsive */
