@@ -205,7 +205,7 @@ font-family: 'Bebas Neue', cursive;
 }
 .linkfinal{
     display: flex;
-    background-color: thistle;
+    
     justify-content: left;
     margin: 10px;
     
@@ -214,7 +214,7 @@ font-family: 'Bebas Neue', cursive;
     color: white;
 }
 .generoprincipal{
-   background-color: yellowgreen;
+  
    margin: 5px;
    
 }
