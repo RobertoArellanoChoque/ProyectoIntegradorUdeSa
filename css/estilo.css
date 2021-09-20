@@ -226,8 +226,41 @@ font-family: 'Bebas Neue', cursive;
 
 /*aqui esta el css de generos*/ 
 
+.flexboxgeneros li a {
+    color:white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    
+
+    
+}
+.flexboxgeneros li{
+width: 100px;
+background-color: red;
+margin: 30px;
+border-radius: 10px;
+padding: 20px;
+text-align: center;
 
 
+}
+.flexboxgeneros li:hover{
+    background-color: tomato;
+
+}
+
+.flexboxgeneros {
+    display: flex;
+    justify-content: center;
+    
+}
+.titulos12 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 
 /*Responsive */
