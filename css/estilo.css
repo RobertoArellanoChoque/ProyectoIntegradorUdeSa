@@ -265,15 +265,14 @@ width: 100vw;
     padding: 2px;
 }
 .nombres{
-     text-align:none ;
+    text-align: center;
+     margin: 20px;
 }
 .gmail{
     text-align: left;
     
 }
-.nombres{
-    margin: 20px;
-}
+
 
 
 
