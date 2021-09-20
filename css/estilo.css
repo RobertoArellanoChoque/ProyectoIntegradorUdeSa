@@ -310,17 +310,15 @@ width: 100vw;
 .gmail{
     text-align: left;
     
-}
-
-
-
-
-
-
-
-
-
-
     
+        
 
+}
+@media screen and (max-width:420px) {
+    .flexboxgeneros{
+        flex-direction: column;
+        margin: 0%;
+    }
+
+}
 
