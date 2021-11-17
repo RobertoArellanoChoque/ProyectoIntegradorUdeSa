@@ -1,1 +1,4 @@
-let roberto 
+fetch()
+let pelicula = document.getElementById(titulopelicula)
+
+
