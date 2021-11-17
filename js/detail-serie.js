@@ -5,7 +5,7 @@ console.log(id);
  
 let api_key = 'e200abfaa90988d674f8605d11e8b9d0'
 let url = `
-https://api.themoviedb.org/3/tv/${id}?api_key=e200abfaa90988d674f8605d11e8b9d0`
+https://api.themoviedb.org/3/tv/${id}?api_key=${api_key}`
 fetch(url)
 .then(function(response){
     return response.json()
@@ -26,7 +26,7 @@ fetch(url)
         favorito.push(id);
    
         let favoritoAString = JSON.stringify(favoritos);
-        localStorage.setItem('favoritos', favoritosAString);
+        localStorage.setItem('favoritosSeries', favoritosAString);
  
  
     })
