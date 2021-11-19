@@ -3,7 +3,7 @@ console.log('favoritos')
 let recuperoStorage = localStorage.getItem('favoritos');
 let favoritos = JSON.parse(recuperoStorage);
 
-
+let imagen = 'https://image.tmdb.org/t/p/w342'
 let lista = document.querySelector('.lista');
 let contenidoLista = '';
 
@@ -24,8 +24,8 @@ for (let i= 0; i<favoritos.length; i++) {
     
     `  <article>
         <h2>${data.data.title}</h2>
-        <img>src=${data.data.images.original.url}>
-        <a href="">Ver peliculas</a>
+        <img>src=${data.data.poster_path}>
+        <a href="">Ver contenido</a>
         </article>`
         
 
