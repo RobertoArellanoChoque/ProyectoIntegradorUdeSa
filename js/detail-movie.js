@@ -25,6 +25,7 @@ fetch(url)
         let estreno = document.querySelector('.estreno')
         
         img.src = imagen + data.poster_path;
+        img.alt= data.title
         estreno.innerHTML += data.release_date;
         puntuacion.innerHTML += `${data.vote_average} ⭐` ;
         duracion.innerHTML += `${data.runtime} minutos`;

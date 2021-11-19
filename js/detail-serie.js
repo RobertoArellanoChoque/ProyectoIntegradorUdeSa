@@ -38,6 +38,7 @@ fetch(url)
         genero.innerHTML += `<a href= "genres.html">${data.genres[0].name}</a>`;
         informacion.innerHTML += data.overview;
         titulosdetalles.innerHTML += data.title;
+        img.alt= data.title;
     
         let favoritoSerie = []
 
