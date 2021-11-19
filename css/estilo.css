@@ -171,6 +171,11 @@ font-family: 'Bebas Neue', cursive;
 .favorito{
     text-decoration: none;
     color:white;
+
+}
+.favoritoSerie{
+    text-decoration: none;
+    color:white;
 }
 .cajadatos{
     background-color: rgba(153, 45, 45, 0.753);
