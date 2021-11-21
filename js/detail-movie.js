@@ -33,24 +33,49 @@ fetch(url)
         informacion.innerHTML += data.overview;
         titulosdetalles.innerHTML += data.title;
     
-        let favorito = []
+        let favoritos = []
+        let recuperoStorage = localStorage.getItem('favoritos');
+        
+            
+        if (recuperoStorage != null) {
+            favoritos = JSON.parse(recuperoStorage);
+        }
+         
+
+        if(favoritos.includes(id)){
+            letrasfavoritos.innerText = 'QUITAR DE FAVORITOS'
+        }
+       
 
         botonFavoritos.addEventListener('click', function (event) {
             event.preventDefault();
-            favorito.push(id);
+            favoritos.push(id);
+            botonFavoritos.innerText = 'QUITAR DE FAVORITOS';
+            if (favoritos.includes(id)){
+                let idASacar = favoritos.indexOf(id);
+                favoritos.splice(idASacar, 1);
+                letrasfavoritos.innerText = 'QUITAR DE FAVORITOS'
+            } else{
+                favoritos.push(id);
+             letrasfavoritos.innerText = 'QUITAR DE FAVORITOS'
 
-            let favoritoAString = JSON.stringify(favorito);
+            }
+             let favoritoAString = JSON.stringify(favoritos);
             localStorage.setItem('favoritoPeliculas', favoritoAString);
+            console.log(localStorage)
 
 
         })
+       
+        
+    })
 
+    .catch(function (e) {
+        console.log(e);
     })
 
 
-
-
-
+   
 
 
 

@@ -164,13 +164,27 @@ font-family: 'Bebas Neue', cursive;
    text-align: center;
    text-decoration: none;
    font-family: 'Commissioner', sans-serif;
-   
+   color: white;
    
 
+
+}
+.generoSinSub{
+    text-decoration: none;
+    color: white;
+    font-style: none;
+    font-size: 25px;
+    margin: 10px;
+    font-family: 'Commissioner', sans-serif;
+
+}
+.botonFavoritos{
+    color: white;
+    text-decoration: none;
 }
 .favorito{
     text-decoration: none;
-    color:white;
+   
 
 }
 .favoritoSerie{
