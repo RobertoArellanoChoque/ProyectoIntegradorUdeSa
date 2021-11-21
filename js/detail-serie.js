@@ -37,7 +37,7 @@ fetch(url)
         duracion.innerHTML += `${data.number_of_seasons} temporadas` ;
         genero.innerHTML += `<a href= "genres.html">${data.genres[0].name}</a>`;
         informacion.innerHTML += data.overview;
-        titulosdetalles.innerHTML += data.title;
+        titulosdetalles.innerHTML += data.original_name;
         img.alt = data.title;
 
         let favoritoSerie = []
