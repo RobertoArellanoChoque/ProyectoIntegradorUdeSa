@@ -1,15 +1,19 @@
-console.log('Hola Mundo');
-
 let formulario = document.querySelector('form')
-let input = document.querySelector('.input')
-let mensajeAviso = 'Campo vacio';
+let inputField = document.querySelector('.input')
+let mensaje = document.querySelector('.mensaje')
 
 formulario.addEventListener('submit', function(evento){
     evento.preventDefault();
-    if(input.value ==""){
-        alert(mensajeAviso);
-        
+    if (inputField.value== ""){
+        mensaje.innerText ="Campo vacio"
+    } else if (inputField.value.lenght < 3){
+        mensaje.innerText ="Minimo 3 letras"
     }
-
-
+    
 })
+
+
+
+
+
+
