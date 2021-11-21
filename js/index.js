@@ -1,5 +1,5 @@
 
-let url = 'https://api.themoviedb.org/3/movie/popular?api_key=cd97ce54561a25ea3bbdfae70457a394'
+let url = 'https://api.themoviedb.org/3/movie/popular?api_key=cd97ce54561a25ea3bbdfae70457a394';
 
 
 fetch(url)
@@ -27,7 +27,7 @@ fetch(url)
 
     })
 
-let url2 = 'https://api.themoviedb.org/3/movie/top_rated?api_key=cd97ce54561a25ea3bbdfae70457a394'
+let url2 = 'https://api.themoviedb.org/3/movie/top_rated?api_key=cd97ce54561a25ea3bbdfae70457a394';
 
 
 fetch(url2)
@@ -60,7 +60,7 @@ fetch(url2)
 
     })
 
-let url3 = 'https://api.themoviedb.org/3/tv/popular?api_key=cd97ce54561a25ea3bbdfae70457a394'
+let url3 = 'https://api.themoviedb.org/3/tv/popular?api_key=cd97ce54561a25ea3bbdfae70457a394';
 
 fetch(url3)
     .then(function (response) {
@@ -71,7 +71,7 @@ fetch(url3)
         let infoSeries = data.results
         let series = document.querySelector('#seriesTop')
         let seriesNuevas = '';
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 5; i++) [
             seriesNuevas += `<article>
                                <img class="imagen" src="${infoSeries[i].poster_path}" alt="${infoSeries[i].name}" >
                                <h3 class=tituoloprincipaldepelicula>
@@ -79,7 +79,7 @@ fetch(url3)
                                 </h3>
                                 <p class="titulopelicula" > Estreno: ${infoSeries[i].first_air_date}</p>
                              </article>`
-        }
+        ]
 
         series.innerHTML = seriesNuevas;
 
