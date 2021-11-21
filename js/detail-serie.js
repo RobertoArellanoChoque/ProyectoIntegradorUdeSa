@@ -3,31 +3,25 @@ let qsToObject = new URLSearchParams(qs);
 let id = qsToObject.get('id')
 console.log(id);
 
-
-let imagen = 'https://image.tmdb.org/t/p/w342'
-
-
-
 let api_key = 'e200abfaa90988d674f8605d11e8b9d0';
 let url = `https://api.themoviedb.org/3/tv/${id}?api_key=${api_key} `
+
 fetch(url)
     .then(function (response) {
         return response.json()
-
     })
     .then(function (data) {
         console.log(data);
 
+        let imagen = 'https://image.tmdb.org/t/p/w342'
+
         let img = document.querySelector('img')
         let genero = document.querySelector('#genero')
-
         let puntuacion = document.querySelector('.puntuacion')
-
         let informacion = document.querySelector('.informacion')
-
         let titulosdetalles = document.querySelector('.titulosdetalles')
-        let duracion = document.querySelector('duracion')
-        
+        let duracion = document.querySelector('.duracion')
+        let botonFavoritos = document.querySelector('.botonFavoritos')
         let estreno = document.querySelector('.estreno')
        
        
