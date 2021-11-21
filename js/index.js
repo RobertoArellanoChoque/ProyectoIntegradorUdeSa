@@ -66,9 +66,9 @@ fetch(url3)
     .then(function (response) {
         return response.json()
     })
-    .then(function (data) {
-        console.log(data.results);
-        let infoSeries = data.results
+    .then(function (dataSeries) {
+        console.log(dataSeries.results);
+        let infoSeries = dataSeries.results
         let series = document.querySelector('#seriesTop')
         let seriesNuevas = '';
         for (let i = 0; i < 5; i++) [
