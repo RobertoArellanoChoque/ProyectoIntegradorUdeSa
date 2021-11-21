@@ -1,16 +1,14 @@
+console.log('Hola Mundo');
+
 let formulario = document.querySelector('form')
-let inputField = document.querySelector('.buscar')
-let mensaje = document.querySelector('.mensaje')
+let input = document.querySelector('.input')
+let mensajeAviso = 'Campo vacio';
 
 formulario.addEventListener('submit', function(evento){
     evento.preventDefault();
-
-    if (inputField.value ==""){
-        mensaje.innerText ="Campo vacio"
-    } 
-    else if(inputField.value >= 1 ){
-        this.submit
-
+    if(input.value ==""){
+        alert(mensajeAviso);
+        
     }
 
 
