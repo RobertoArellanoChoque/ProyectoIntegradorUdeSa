@@ -13,7 +13,7 @@ fetch(url)
         let pruebaLista = '';
         for (let i = 0; i < 5; i++) {
             pruebaLista += `<article>
-                               <img class="imagen" src="${info[i].poster_path}" alt="${info[i].original_title}" >
+                               <img class="imagen" src="https://image.tmdb.org/t/p/w342${info[i].poster_path}" alt="${info[i].original_title}" >
                                <h3 class=tituoloprincipaldepelicula>
                                <a class="titulopelicula" href="detail-movie.html?id=${info[i].id}" >${info[i].original_title}</a>
                                </h3>
@@ -41,7 +41,7 @@ fetch(url2)
         let peliculasNuevas = '';
         for (let i = 0; i < 5; i++) {
             peliculasNuevas += `<article>
-                                  <img class="imagen" src="${infoTop[i].poster_path}" alt="${infoTop[i].original_title}" >
+                                  <img class="imagen" src="https://image.tmdb.org/t/p/w342${infoTop[i].poster_path}" alt="${infoTop[i].original_title}" >
                                   <h3 class=tituoloprincipaldepelicula>
                                   <a class="titulopelicula" href="detail-movie.html?id=${infoTop[i].id}" >${infoTop[i].original_title}</a>
                                   </h3>
@@ -67,13 +67,13 @@ fetch(url3)
         return response.json()
     })
     .then(function (data) {
-        console.log(data);
+        console.log(data.results);
         let infoSeries = data.results
         let series = document.querySelector('#seriesTop')
         let seriesNuevas = '';
         for (let i = 0; i < 5; i++) [
             seriesNuevas += `<article>
-                               <img class="imagen" src="${infoSeries[i].poster_path}" alt="${infoSeries[i].name}" >
+                               <img class="imagen" src= "https://image.tmdb.org/t/p/w342${infoSeries[i].poster_path}">
                                <h3 class=tituoloprincipaldepelicula>
                                 <a class="titulopelicula" href="detail-series.html?id=${infoSeries[i].id}" >${infoSeries[i].name}</a>
                                 </h3>
@@ -90,6 +90,7 @@ fetch(url3)
 
     })
 
+    
 
 
 
