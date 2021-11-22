@@ -27,7 +27,7 @@ fetch(url)
        
         img.src = imagen + data.poster_path;
         estreno.innerHTML += data.first_air_date;
-        puntuacion.innerHTML += `${data.vote_average} `;
+        puntuacion.innerHTML += `${data.vote_average} ⭐`;
         duracion.innerHTML += `${data.number_of_seasons} temporadas` ;
         genero.innerHTML += `<a href= "genres.html">${data.genres[0].name}</a>`;
         informacion.innerHTML += data.overview;
