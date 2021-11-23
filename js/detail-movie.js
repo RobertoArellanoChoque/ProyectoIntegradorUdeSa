@@ -1,6 +1,6 @@
 let qs = location.search;
 let qsToObject = new URLSearchParams(qs);
-let id = qsToObject.get('id') //580489
+let id = qsToObject.get('id') //acceso a la propiedad id del objeto
 console.log(id);
 
 let api_key = 'e200abfaa90988d674f8605d11e8b9d0';
@@ -13,7 +13,7 @@ fetch(url)
     .then(function (data) {
         console.log(data);
 
-        let imagen = 'https://image.tmdb.org/t/p/w342'
+        let imagen = 'https://image.tmdb.org/t/p/w342'// selector
 
         let img = document.querySelector('img')
         let genero = document.querySelector('#genero')
@@ -23,6 +23,8 @@ fetch(url)
         let duracion = document.querySelector('.duracion')
         let botonFavoritos = document.querySelector('.botonFavoritos')
         let estreno = document.querySelector('.estreno')
+        
+    
         
         img.src = imagen + data.poster_path;
         img.alt= data.title
@@ -34,30 +36,42 @@ fetch(url)
         titulosdetalles.innerHTML += data.title;
     
         let favoritos = []
-        let recuperoStorage = localStorage.getItem('favoritos');
+        let recuperoStorage = localStorage.getItem('favoritoPeliculas');
         
-            
+        console.log(recuperoStorage)
         if (recuperoStorage != null) {
             favoritos = JSON.parse(recuperoStorage);
-        }
-         
 
+        }
+        let letrasfavoritos = document.querySelector('.botonFavoritos');
         if(favoritos.includes(id)){
-            letrasfavoritos.innerText = 'QUITAR DE FAVORITOS'
+            botonFavoritos.innerText = 'QUITAR DE FAVORITOS'
+        }
+        else{
+            botonFavoritos.innerText = 'AÑADIR A FAVORITOS❤️'
+
         }
        
+        
+        
+
+
+
+         
+
+        
 
         botonFavoritos.addEventListener('click', function (event) {
             event.preventDefault();
-            favoritos.push(id);
-            botonFavoritos.innerText = 'QUITAR DE FAVORITOS';
+           
+
             if (favoritos.includes(id)){
                 let idASacar = favoritos.indexOf(id);
                 favoritos.splice(idASacar, 1);
-                letrasfavoritos.innerText = 'QUITAR DE FAVORITOS'
+                botonFavoritos.innerText = 'AÑADIR A FAVORITOS❤️'
             } else{
                 favoritos.push(id);
-             letrasfavoritos.innerText = 'QUITAR DE FAVORITOS'
+             botonFavoritos.innerText = 'QUITAR DE FAVORITOS'
 
             }
              let favoritoAString = JSON.stringify(favoritos);

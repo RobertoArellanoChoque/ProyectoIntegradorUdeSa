@@ -34,35 +34,46 @@ fetch(url)
         titulosdetalles.innerHTML += data.original_name;
         img.alt = data.title;
 
-        let favoritoSerie = []
-        let recuperoStorage = localStorage.getItem('favoritos');
+        let favoritos = []
+        let recuperoStorage = localStorage.getItem('favoritoSeries');
         
-            
+        
         if (recuperoStorage != null) {
             favoritos = JSON.parse(recuperoStorage);
         }
-         
-
+        
         if(favoritos.includes(id)){
-            letrasfavoritos.innerText = 'QUITAR DE FAVORITOS'
+            botonFavoritos.innerText = 'QUITAR DE FAVORITOS'
+        }
+        else{
+            botonFavoritos.innerText = 'AÑADIR A FAVORITOS❤️'
+
         }
        
+        
+        
+
+
+
+         
+
+        
 
         botonFavoritos.addEventListener('click', function (event) {
             event.preventDefault();
-            favoritos.push(id);
-            botonFavoritos.innerText = 'QUITAR DE FAVORITOS';
+           
+
             if (favoritos.includes(id)){
                 let idASacar = favoritos.indexOf(id);
                 favoritos.splice(idASacar, 1);
-                letrasfavoritos.innerText = 'QUITAR DE FAVORITOS'
+                botonFavoritos.innerText = 'AÑADIR A FAVORITOS❤️'
             } else{
                 favoritos.push(id);
-             letrasfavoritos.innerText = 'QUITAR DE FAVORITOS'
+             botonFavoritos.innerText = 'QUITAR DE FAVORITOS'
 
             }
              let favoritoAString = JSON.stringify(favoritos);
-            localStorage.setItem('favoritoPeliculas', favoritoAString);
+            localStorage.setItem('favoritoSeries', favoritoAString);
             console.log(localStorage)
 
 
@@ -74,3 +85,4 @@ fetch(url)
     .catch(function (e) {
         console.log(e);
     })
+
