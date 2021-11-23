@@ -169,6 +169,23 @@ font-family: 'Bebas Neue', cursive;
 
 
 }
+
+.peliculasFavoritas{
+    color: white;
+    font-style: none;
+    font-size: 35px;
+    font-family: 'Commissioner', sans-serif;
+    text-shadow: 4px 8px 35px rgb(155, 145, 145); 
+    text-decoration: none;
+    
+}
+.seriesFavoritas{
+    color: white;
+    font-style: none;
+    font-size: 35px;
+    font-family: 'Commissioner', sans-serif;
+    text-shadow: 4px 8px 35px rgb(155, 145, 145); 
+}
 .generoSinSub{
     text-decoration: none;
     color: white;
