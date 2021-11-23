@@ -3,13 +3,13 @@ let qsToObject = new URLSearchParams(qs);
 let id = qsToObject.get('id')
 console.log(id);
 
+
 let api_key = 'e200abfaa90988d674f8605d11e8b9d0';
 let url = `https://api.themoviedb.org/3/genre/movie/list${id}?api_key=${api_key}`
 
+let cuadro = document.querySelector('.ButGen')
 
-function(){
-    getElement
-}
+
 fetch(url)
     .then(function (response) {
         return response.json()
