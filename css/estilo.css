@@ -102,6 +102,14 @@ text-shadow: 4px 8px 35px rgb(155, 145, 145);
     color: white;
     text-decoration: none;
 }
+.imagenNuevo {
+    width: auto;
+    height: auto;
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+}
+
 
 
 
