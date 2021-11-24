@@ -83,6 +83,7 @@ text-shadow: 4px 8px 35px rgb(155, 145, 145);
 .tituoloprincipaldepelicula{
     text-align: center;
 }
+
 /*Este es el css del footer*/
 .footer{
     padding: 0;
@@ -101,6 +102,7 @@ text-shadow: 4px 8px 35px rgb(155, 145, 145);
     color: white;
     text-decoration: none;
 }
+
 
 
 /*Usando css para detailmovie y detailserie*/
